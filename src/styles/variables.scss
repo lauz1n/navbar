@@ -1,0 +1,25 @@
+//colors 
+$gray: (#131313);
+$golden: (#A99262);
+$primary:(#fff);
+$bg2: rgb(0,0,0);
+
+$header-height: 90px;
+
+$spacing-sm: 8px;
+$spacing-md: 16px;
+$spacing-lg: 32px;
+
+$sm: 37.5em;
+$md: 48em;
+$lg: 64em;
+$xl: 75em;
+
+@mixin breakpoint($point){
+  @if $point == md{
+    @media (min-width: $md){
+      @content;
+    }
+  }
+}
+
