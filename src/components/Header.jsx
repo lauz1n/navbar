@@ -1,6 +1,6 @@
 import React from "react"
 import { useState, useEffect } from "react"
-import styles from "./Header.module.scss"
+import styles from "../styles/Header.module.scss"
 import { RiCloseFill } from "react-icons/ri"
 import { BiMenuAltRight } from "react-icons/bi"
 
@@ -24,10 +24,10 @@ const Header = () => {
             className={`${styles.nav} ${menuOpen ? styles[`nav--open`] : {}}`}
           >
             <a className={styles.nav__item} href={"/"}>
-              about,
+              about
             </a>
             <a className={styles.nav__item} href={"/"}>
-              skills,
+              skills
             </a>
             <div className={styles.nav__button__container}>
               <Button />
@@ -48,7 +48,7 @@ const Header = () => {
 }
 
 const Button = () => {
-  return <button className={styles.button}>hire me_</button>
+  return <button className={styles.button}>hire me</button>
 }
 
 export default Header
